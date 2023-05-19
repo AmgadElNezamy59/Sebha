@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W6D-1G-amW">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Masbaha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ojE-Fd-t0Q">
+                                <rect key="frame" x="0.0" y="85" width="430" height="394"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdI-QD-aR0">
+                                <rect key="frame" x="175" y="791" width="80" height="47"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="إعادة">
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="27"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1XN-II-Kgs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86d-m9-qiw">
+                                <rect key="frame" x="65.666666666666686" y="471" width="299" height="267"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" cornerRadius="15" image="fingerprint"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fingerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tam-o1-aiT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="342" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkd-Fj-rna">
+                                <rect key="frame" x="157" y="243.99999999999997" width="116" height="72.666666666666657"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="59"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tkd-Fj-rna" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eai-2R-jqy"/>
+                            <constraint firstItem="ojE-Fd-t0Q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nk0-bv-0M0"/>
+                            <constraint firstItem="86d-m9-qiw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.695349" id="PhQ-3f-I1r"/>
+                            <constraint firstItem="tkd-Fj-rna" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="185" id="VWh-6t-rxb"/>
+                            <constraint firstItem="ojE-Fd-t0Q" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.422747" id="WV2-bQ-vst"/>
+                            <constraint firstItem="ojE-Fd-t0Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="dKY-VU-X4v"/>
+                            <constraint firstItem="RdI-QD-aR0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g5d-vH-rUh"/>
+                            <constraint firstItem="86d-m9-qiw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.286481" id="juM-2X-pbO"/>
+                            <constraint firstItem="ojE-Fd-t0Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ko6-OO-QRu"/>
+                            <constraint firstItem="ojE-Fd-t0Q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qqo-IS-jFX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RdI-QD-aR0" secondAttribute="bottom" constant="11" id="t7b-OJ-UiK"/>
+                            <constraint firstItem="RdI-QD-aR0" firstAttribute="top" secondItem="86d-m9-qiw" secondAttribute="bottom" constant="53" id="tjB-58-liR"/>
+                            <constraint firstItem="86d-m9-qiw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vTC-2A-k8X"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="fD6-Sr-Alf">
+                        <imageReference key="image" image="chevron.backward.circle.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="numberOfZakerLable" destination="tkd-Fj-rna" id="aWk-a6-wvf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="807"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pB5-mx-boy">
+            <objects>
+                <viewController id="npB-jL-jZh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b8E-02-WgY">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kj-Cc-HSw">
+                                <rect key="frame" x="40" y="79" width="350" height="750"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="o0Q-ds-q93">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="1362"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الآحاديث النبوية الشريفة " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3M-xj-CGM">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="26.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                                <color key="textColor" systemColor="systemPinkColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIi-QV-4fq">
+                                                <rect key="frame" x="0.0" y="66.333333333333343" width="350" height="61"/>
+                                                <string key="text"> قال صلى الله عليه وسلم ((يا أيها الناس استغفروا ربكم وتوبوا إليه فإني أستغفر الله وأتوب إليه في كل يوم مئة مرة أو أكثر من مئة مرة)) ((حديث صحيح))</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPP-Sm-Ane">
+                                                <rect key="frame" x="0.0" y="167.33333333333334" width="350" height="122.00000000000003"/>
+                                                <string key="text"> قال صلى الله عليه وسلم (( أيعجز أحدكم أن يكسب كل يوم ألف حسنة ؟ فسأله سائل من جلسائه : كيف يكسب أحدنا ألف حسنة ؟ قال : يسبح مائة تسبيحه ، فيكتب له ألف حسنة ، أو يحط عنه ألف خطيئة )) ((رواه مسلم))
+</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قال صلى الله عليه وسلم ((من قال : سبحان الله مئة مرة قبل طلوع الشمس وقبل غروبها ؛ كان أفضل من مئة بدنة)) ((حسنه الألباني))" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aox-Ij-5Ez">
+                                                <rect key="frame" x="0.0" y="329.33333333333331" width="350" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قال صلى الله عليه وسلم ((من قال سبحان الله وبحمده ، في يوم مائة مرة ، حطت خطاياه وإن كانت مثل زبد البحر)) ((رواه البخاري))" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vn-qa-gxn">
+                                                <rect key="frame" x="0.0" y="430.33333333333331" width="350" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1b-Qw-o8h">
+                                                <rect key="frame" x="0.0" y="531.33333333333337" width="350" height="142.33333333333337"/>
+                                                <string key="text"> قال صلى الله عليه وسلم ((من قالَ في يومٍ مائتي [مائة إذا أصبح, ومائة إذا أمسى] : لا إله إلا الله وحده لا شريك له, له الملك وله الحمدُ, وهو على كلَّ شيءٍ قدير, لم يسبقْه أحدٌ كانَ قبْلَه, ولا يدركه أحدٌ كان بعدَه إلا من عَمِل أفضل من عملِهِ)) ((قال عنه الألباني إسناده حسن))
+</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7C-IU-gvF">
+                                                <rect key="frame" x="0.0" y="713.66666666666663" width="350" height="122"/>
+                                                <string key="text"> قال صلى الله عليه وسلم (من سبح الله في دبر كل صلاة ثلاثا وثلاثين . وحمد الله ثلاثا وثلاثين . وكبر الله ثلاثا وثلاثين . فتلك تسعة وتسعون . وقال ، تمام المائة : لا إله إلا الله وحده لا شريك له . له الملك وله الحمد وهو على كل شيء قدير - غفرت خطاياه وإن كانت مثل زبد البحر) ((رواه مسلم))</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1k-Mq-pKv">
+                                                <rect key="frame" x="0.0" y="875.66666666666663" width="350" height="81.333333333333371"/>
+                                                <string key="text"> قال صلى الله عليه وسلم ((معقبات لا يخيب قائلهن أو فاعلهن : ثلاث وثلاثون تسبيحة ، وثلاث وثلاثون تحميدة ، وأربع وثلاثون تكبيرة ، في دبر كل صلاة)) ((رواه مسلم))</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Q0-mX-kzW">
+                                                <rect key="frame" x="0.0" y="997.00000000000011" width="350" height="81.333333333333371"/>
+                                                <string key="text"> قال صلى الله عليه وسلم ((من صلّى عليّ حين يصبح عشراً وحين يمسي عشراً أدركته شفاعتي)) ((رواه الطبراني))
+</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gip-Zs-3sl">
+                                                <rect key="frame" x="0.0" y="1118.3333333333333" width="350" height="243.66666666666674"/>
+                                                <string key="text">عن أم هانئ بنت أبي طالب قالت : مر بي رسول الله صلى الله عليه وسلم فقلت : إني قد كبرت وضعفت ، أو كما قالت ، فمُرني بعمل أعمله وأنا جالسة . قال : (( سبٍّحي الله مائة تسبيحه ، فإنها تعدل لك مائة رقبة تعتقينها من ولد إسماعيل ، واحمدي الله مائة تحميدةٍ ، تعدل لك مائة فرس مسرجة ملجمة تحملين عليها في سبيل الله وكبري الله مائة تكبيرة فإنها تعدل لك مائة بدنه مقلدة متقبلة ، وهلّلي مائة تهليلة . قال ابن خلف : ( الراوي عن عاصم ) أحسبه قال : ـ تملأ ما بين السماء والأرض ، ولا يرفع يومئذٍ لأحد عمل إلا أن يأتي بمثل ما أتيتٍ به )) ((حسن إسناده الألباني))</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="o0Q-ds-q93" firstAttribute="width" secondItem="3Kj-Cc-HSw" secondAttribute="width" id="Dg8-tY-ucc"/>
+                                    <constraint firstItem="o0Q-ds-q93" firstAttribute="top" secondItem="3Kj-Cc-HSw" secondAttribute="top" id="Qv1-vi-woI"/>
+                                    <constraint firstAttribute="bottom" secondItem="o0Q-ds-q93" secondAttribute="bottom" id="igC-Yk-OW6"/>
+                                    <constraint firstAttribute="trailing" secondItem="o0Q-ds-q93" secondAttribute="trailing" id="k38-wF-hac"/>
+                                    <constraint firstItem="o0Q-ds-q93" firstAttribute="leading" secondItem="3Kj-Cc-HSw" secondAttribute="leading" id="rkU-5H-ifs"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="YZQ-wS-zuo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="nUs-sN-MGQ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RI0-U4-x92"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RI0-U4-x92" firstAttribute="bottom" secondItem="3Kj-Cc-HSw" secondAttribute="bottom" constant="20" id="CY3-Wr-DDS"/>
+                            <constraint firstItem="3Kj-Cc-HSw" firstAttribute="leading" secondItem="RI0-U4-x92" secondAttribute="leading" constant="40" id="O0F-Eu-1yJ"/>
+                            <constraint firstItem="3Kj-Cc-HSw" firstAttribute="top" secondItem="RI0-U4-x92" secondAttribute="top" constant="20" id="red-HN-r7l"/>
+                            <constraint firstItem="RI0-U4-x92" firstAttribute="trailing" secondItem="3Kj-Cc-HSw" secondAttribute="trailing" constant="40" id="wty-j9-pAy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="text.bubble.fill" catalog="system" id="dT3-AR-kl7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eK8-5k-LXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442.32558139534882" y="816.95278969957087"/>
+        </scene>
+        <!--من نحن-->
+        <scene sceneID="RcE-JD-KQV">
+            <objects>
+                <viewController title="من نحن" id="I8j-ev-dFt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="onD-Ra-WEE">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="25749" translatesAutoresizingMaskIntoConstraints="NO" id="U4W-Hx-3IH">
+                                <rect key="frame" x="87" y="182" width="255" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2023-03-30 at 11.42.05 PM" id="Vrb-xN-B34">
+                                <rect key="frame" x="95" y="77" width="239" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmf-Cc-dUX">
+                                <rect key="frame" x="52" y="428" width="325" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">تطبيق الحديث هي مجموعة من التطبيقات مبنية علي مجموعة من الآحاديث النبوية الشريفة  لكل تطبيق هدف مختلف عن الآخر  هدفنا هو أحياء الآحاديث والعمل بها. </string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bn-SR-DKk"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="2Ae-OI-wku">
+                        <imageReference key="image" image="questionmark.circle.fill" catalog="system" symbolScale="large" variableValue="1"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kz-UC-Bx0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="817"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uVi-hZ-rzz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="W6D-1G-amW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wi0-uu-cEP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.75686275960000005" green="0.58823531870000001" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.77254903320000001" green="0.60000002379999995" blue="0.34901961679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Rdn-Jw-nMv"/>
+                        <segue destination="npB-jL-jZh" kind="relationship" relationship="viewControllers" id="NTt-R1-2Ku"/>
+                        <segue destination="I8j-ev-dFt" kind="relationship" relationship="viewControllers" id="i3z-0d-cSK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ha-JT-GYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.13953488372093" y="91.416309012875544"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="25749" width="5688" height="3868"/>
+        <image name="Screenshot 2023-03-30 at 11.42.05 PM" width="976" height="378"/>
+        <image name="chevron.backward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="fingerprint" width="512" height="512"/>
+        <image name="logo" width="500" height="500"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
